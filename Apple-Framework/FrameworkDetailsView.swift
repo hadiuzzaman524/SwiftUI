@@ -15,10 +15,15 @@ struct FrameworkDetailsView: View {
         VStack{
             HStack{
                 Spacer()
-                Image(systemName: "xmark")
-                    .foregroundColor(Color(.label))
-                    .imageScale(.large)
-                    .frame(width: 40, height: 40)
+                Button{
+                    
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 40, height: 40)
+                }
+             
                     
             }
             FrameworkTitle(framework: framework)
