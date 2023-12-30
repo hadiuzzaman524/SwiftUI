@@ -15,15 +15,21 @@ struct Framework_GridView: View {
     ]
     
     var body: some View {
-        LazyVGrid(columns: columns){
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-            FrameworkTitle(imageName: "app-clip", name: "App Clips")
-        
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns: columns){
+                    
+                    ForEach(MockData.frameworks){ framework in
+                        FrameworkTitle(imageName: framework.imageName, name: framework.name)
+                
+                  
+                    }
+                }.padding()
+            }
+       
+            .navigationTitle("🍏 Framework")
         }
+       
      
     }
 }

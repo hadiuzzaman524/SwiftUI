@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Framework{
-    
+struct Framework: Identifiable{
+    var id = UUID()
     var name:String
     var imageName:String
     var urlString:String
