@@ -38,7 +38,8 @@ struct Framework_GridView: View {
         }.sheet(isPresented: $viewModel.isShowingDetailsView) {
          
          /// show the view details with updated framework data
-            FrameworkDetailsView(framework: viewModel.selectedFramework ?? MockData.sampleFramework)
+            FrameworkDetailsView(framework: viewModel.selectedFramework ?? MockData.sampleFramework,
+                                 showDetailsView: $viewModel.isShowingDetailsView)
         }
        
      

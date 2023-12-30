@@ -10,13 +10,13 @@ import SwiftUI
 struct FrameworkDetailsView: View {
     
     var framework:Framework
-    
+    @Binding var showDetailsView: Bool
     var body: some View {
         VStack{
             HStack{
                 Spacer()
                 Button{
-                    
+                    showDetailsView = false
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
@@ -46,5 +46,5 @@ struct FrameworkDetailsView: View {
 }
 
 #Preview {
-    FrameworkDetailsView(framework:MockData.sampleFramework)
+    FrameworkDetailsView(framework:MockData.sampleFramework, showDetailsView: .constant(false))
 }
