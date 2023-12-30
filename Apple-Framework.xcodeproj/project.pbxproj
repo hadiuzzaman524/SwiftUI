@@ -12,6 +12,7 @@
 		0FDBA15D2B400EE800C540CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDBA15C2B400EE800C540CF /* Preview Assets.xcassets */; };
 		0FDBA1642B4024B200C540CF /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBA1632B4024B200C540CF /* Framework.swift */; };
 		0FDBA1662B402B0400C540CF /* Framework_GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBA1652B402B0400C540CF /* Framework_GridView.swift */; };
+		0FDBA16A2B4054B700C540CF /* FrameworkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBA1692B4054B700C540CF /* FrameworkDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0FDBA15C2B400EE800C540CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FDBA1632B4024B200C540CF /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		0FDBA1652B402B0400C540CF /* Framework_GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework_GridView.swift; sourceTree = "<group>"; };
+		0FDBA1692B4054B700C540CF /* FrameworkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		0FDBA1542B400EE500C540CF /* Apple-Framework */ = {
 			isa = PBXGroup;
 			children = (
+				0FDBA1692B4054B700C540CF /* FrameworkDetailsView.swift */,
 				0FDBA1652B402B0400C540CF /* Framework_GridView.swift */,
 				0FDBA1632B4024B200C540CF /* Framework.swift */,
 				0FDBA1552B400EE500C540CF /* Apple_FrameworkApp.swift */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDBA16A2B4054B700C540CF /* FrameworkDetailsView.swift in Sources */,
 				0FDBA1642B4024B200C540CF /* Framework.swift in Sources */,
 				0FDBA1662B402B0400C540CF /* Framework_GridView.swift in Sources */,
 				0FDBA1562B400EE500C540CF /* Apple_FrameworkApp.swift in Sources */,
