@@ -20,9 +20,8 @@ struct Framework_GridView: View {
                 LazyVGrid(columns: columns){
                     
                     ForEach(MockData.frameworks){ framework in
-                        FrameworkTitle(imageName: framework.imageName, name: framework.name)
-                
-                  
+                        FrameworkTitle(framework: framework)
+            
                     }
                 }.padding()
             }
@@ -41,15 +40,14 @@ struct Framework_GridView: View {
 
 struct FrameworkTitle: View {
     
-    var imageName:String
-    var name:String
+    var framework: Framework
     
     var body: some View{
         VStack{
-            Image(imageName)
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
-            Text(name)
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()

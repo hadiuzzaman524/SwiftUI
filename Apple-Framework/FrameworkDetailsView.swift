@@ -21,7 +21,7 @@ struct FrameworkDetailsView: View {
                     .frame(width: 40, height: 40)
                     
             }
-            FrameworkTitle(imageName: framework.imageName, name:framework.name)
+            FrameworkTitle(framework: framework)
             Text(framework.description).font(.body)
                 .fontWeight(.light)
                 .padding()
