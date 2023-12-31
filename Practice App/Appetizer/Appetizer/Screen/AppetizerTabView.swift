@@ -18,7 +18,7 @@ struct AppetizerTabView: View {
                 Image(systemName: "person")
                 Text("Profile")
             }
-            AppetizerListView().tabItem {
+            OrderView().tabItem {
                 Image(systemName: "bag")
                 Text("Order")
             }
