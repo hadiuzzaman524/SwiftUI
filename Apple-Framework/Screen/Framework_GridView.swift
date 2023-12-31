@@ -51,7 +51,7 @@ struct Framework_GridView: View {
 }
 
 
-struct FrameworkTitle: View {
+struct FrameworkTitle: View { 
     
     var framework: Framework
     
