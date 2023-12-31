@@ -9,8 +9,11 @@ import SwiftUI
 
 struct FrameworkDetailsView: View {
     
+    @State var isShowSafariView: Bool = false
     var framework:Framework
     @Binding var showDetailsView: Bool
+    
+    
     var body: some View {
         VStack{
             HStack{
@@ -32,7 +35,7 @@ struct FrameworkDetailsView: View {
                 .padding()
             Spacer()
             Button{
-                
+                isShowSafariView = true
             } label: {
                 Text("More Details")
                     .font(.title3)
@@ -41,7 +44,10 @@ struct FrameworkDetailsView: View {
                     .foregroundColor(.white)
                     .cornerRadius(12)
             }
-        }.padding()
+        }.padding().fullScreenCover(isPresented: $isShowSafariView, content: {
+           
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "https://apple.com")!)
+        })
     }
 }
 
