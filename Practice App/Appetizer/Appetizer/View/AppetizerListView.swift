@@ -12,20 +12,28 @@ struct AppetizerListView: View {
  @StateObject var viewModel = AppetizerListViewModel()
   
     var body: some View {
-        NavigationView{
-            List(viewModel
-                .appetizer){ appetizer in
-              AppetizerCard(appetizer: appetizer)
-              
+        
+        ZStack{
+            NavigationView{
+                List(viewModel
+                    .appetizer){ appetizer in
+                  AppetizerCard(appetizer: appetizer)
+                  
+                }
+                .navigationTitle("🚀 Appetizers")
+            }.onAppear{
+                viewModel.getAppetizers();
             }
-            .navigationTitle("🚀 Appetizers")
-        }.onAppear{
-            viewModel.getAppetizers();
+            .alert(isPresented: $viewModel.hasError ){
+                Alert(title: Text("Error"),
+                      message: Text(viewModel.errorMessage))
+            }
+            
+            if(viewModel.isLoading){
+                ProgressView()
+            }
         }
-        .alert(isPresented: $viewModel.hasError ){
-            Alert(title: Text("Error"),
-                  message: Text(viewModel.errorMessage))
-        }
+       
        
     }
 }

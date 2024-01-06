@@ -11,12 +11,17 @@ class AppetizerListViewModel : ObservableObject{
     @Published var appetizer : [Appetizer] = []
     @Published var errorMessage: String = ""
     @Published var hasError: Bool = false
+    @Published var isLoading : Bool = false
     
     func getAppetizers(){
+        
+        isLoading = true
         
         NetworkManager.shared.getAppetizers(completed:{result in
           
             DispatchQueue.main.async{
+                self.isLoading = false
+                
                 switch(result){
                 case .success(let appetizer):
                     self.appetizer = appetizer
