@@ -9,6 +9,8 @@ import SwiftUI
 
 class AppetizerListViewModel : ObservableObject{
     @Published var appetizer : [Appetizer] = []
+    @Published var errorMessage: String = ""
+    @Published var hasError: Bool = false
     
     func getAppetizers(){
         
@@ -20,7 +22,20 @@ class AppetizerListViewModel : ObservableObject{
                     self.appetizer = appetizer
                     
                 case .failure(let error):
-                  print(error)
+                    switch(error){
+                    case .invalidURL:
+                        self.errorMessage = "Invalid Url"
+                    case .invalidResponse:
+                        self.errorMessage = "Invalid Response"
+                    case .invalidData:
+                        self.errorMessage = "Invalid Data"
+                    case .unableToComplete:
+                        self.errorMessage = "Unable to complete"
+                    }
+                    
+                    if(!self.errorMessage.isEmpty){
+                        self.hasError = true
+                    }
                 }
             }
             

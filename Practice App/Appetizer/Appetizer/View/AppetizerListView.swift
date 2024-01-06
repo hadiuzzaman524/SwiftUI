@@ -10,7 +10,7 @@ import SwiftUI
 struct AppetizerListView: View {
     
  @StateObject var viewModel = AppetizerListViewModel()
-
+  
     var body: some View {
         NavigationView{
             List(viewModel
@@ -21,6 +21,10 @@ struct AppetizerListView: View {
             .navigationTitle("🚀 Appetizers")
         }.onAppear{
             viewModel.getAppetizers();
+        }
+        .alert(isPresented: $viewModel.hasError ){
+            Alert(title: Text("Error"),
+                  message: Text(viewModel.errorMessage))
         }
        
     }
