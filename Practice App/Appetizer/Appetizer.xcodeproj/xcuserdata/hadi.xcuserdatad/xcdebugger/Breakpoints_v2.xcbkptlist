@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1980E828-5BA7-40A2-9E82-A2BF5CF13317"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9513DE4E-7091-4EC8-B36D-EAA9AA2A3D4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Model/Appetizer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32EDC51D-F17B-45E5-9C8B-3DD4C8D4F66E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "988BC64D-34A7-40A2-978B-2E08FEAB9039"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7AF60B06-9225-413D-9DBE-A66B086C029C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7AF60B06-9225-413D-9DBE-A66B086C029C - 9eaea618d7b90ed6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Appetizer.NetworkManager.getAppetizers(completed: (Swift.Result&lt;Swift.Array&lt;Appetizer.Appetizer&gt;, Appetizer.ARError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "309">
+               </Location>
+               <Location
+                  uuid = "7AF60B06-9225-413D-9DBE-A66B086C029C - 9eaea618d7b90ed6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Appetizer.NetworkManager.getAppetizers(completed: (Swift.Result&lt;Swift.Array&lt;Appetizer.Appetizer&gt;, Appetizer.ARError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "255">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE737899-3F1F-4D3E-AB85-C7702AF44211"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AE737899-3F1F-4D3E-AB85-C7702AF44211 - 9eaea618d7b90e52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Appetizer.NetworkManager.getAppetizers(completed: (Swift.Result&lt;Swift.Array&lt;Appetizer.Appetizer&gt;, Appetizer.ARError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "255">
+               </Location>
+               <Location
+                  uuid = "AE737899-3F1F-4D3E-AB85-C7702AF44211 - 9eaea618d7b90e52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Appetizer.NetworkManager.getAppetizers(completed: (Swift.Result&lt;Swift.Array&lt;Appetizer.Appetizer&gt;, Appetizer.ARError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "543">
+               </Location>
+               <Location
+                  uuid = "AE737899-3F1F-4D3E-AB85-C7702AF44211 - 9eaea618d7b90e52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Appetizer.NetworkManager.getAppetizers(completed: (Swift.Result&lt;Swift.Array&lt;Appetizer.Appetizer&gt;, Appetizer.ARError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FEC8792-1C4B-43F9-96FC-D64243B0223A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1C56F43-6432-4913-B68A-3140ACFBD5AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getAppetizers(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
