@@ -13,9 +13,17 @@ struct AppetizerCard: View {
     var body: some View {
         HStack(alignment: .top){
           
-            Image("asian-flank-steak").resizable()
-                .frame(width: 100, height: 80)
-                .cornerRadius(12)
+    
+            AsyncImage(url: URL(string: appetizer.imageURL)){image in
+                image.resizable()
+                    .frame(width: 100, height: 80)
+                    .cornerRadius(12)
+                
+               
+                
+            } placeholder: {
+                ProgressView().frame(width: 100, height: 80)
+            }
                
             VStack(alignment:.leading){
                 
