@@ -11,6 +11,7 @@ struct AppetizerCard: View {
     var appetizer: Appetizer
     
     var body: some View {
+        
         HStack(alignment: .top){
           
     

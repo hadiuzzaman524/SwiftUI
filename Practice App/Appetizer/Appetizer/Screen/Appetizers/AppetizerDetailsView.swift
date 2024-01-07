@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct AppetizerDetailsView: View {
+    var appetizer : Appetizer
+    @Binding var isShowDetails : Bool
+    
     var body: some View {
         VStack{
-            Image("asian-flank-steak").resizable().frame(width: 300, height: 200).aspectRatio(contentMode: .fit)
-                .cornerRadius(12)
-            Text("Test Appetizer").font(.system(size: 22)).fontWeight(.semibold)
-            Text("This is the description of my appetizer. It's dummy").padding();
+            AsyncImage(url: URL(string: appetizer.imageURL)){image in
+                image.resizable()
+                    .frame(width: 300, height: 200)
+                    .cornerRadius(12)
+                
+               
+                
+            } placeholder: {
+                ProgressView().frame(width: 300, height: 200)
+            }
+            Text(appetizer.name).font(.system(size: 22)).fontWeight(.semibold)
+            Text(appetizer.description).padding();
             HStack{
                 VStack{
                     Text("Basic")
@@ -48,7 +59,7 @@ struct AppetizerDetailsView: View {
             .cornerRadius(12)
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .overlay(Button{
-                print("Tap")
+                isShowDetails = false
             } label: {
                 ZStack{
                     Circle().frame(width: 40)
@@ -69,5 +80,5 @@ struct AppetizerDetailsView: View {
 }
 
 #Preview {
-    AppetizerDetailsView()
+    AppetizerDetailsView(appetizer: MockData.sampleAppetizer, isShowDetails: .constant(true))
 }

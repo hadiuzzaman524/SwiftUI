@@ -10,6 +10,9 @@ import SwiftUI
 struct AppetizerListView: View {
     
  @StateObject var viewModel = AppetizerListViewModel()
+    @State private var isShowDetails: Bool = false
+    
+    @State var appetizer : Appetizer?
   
     var body: some View {
         
@@ -18,9 +21,14 @@ struct AppetizerListView: View {
                 List(viewModel
                     .appetizer){ appetizer in
                   AppetizerCard(appetizer: appetizer)
+                            .onTapGesture {
+                              isShowDetails = true
+                                self.appetizer = appetizer
+                            }
                   
-                }
+                    }.disabled(isShowDetails ? true : false)
                 .navigationTitle("🚀 Appetizers")
+            
             }.onAppear{
                 viewModel.getAppetizers();
             }
@@ -28,9 +36,13 @@ struct AppetizerListView: View {
                 Alert(title: Text("Error"),
                       message: Text(viewModel.errorMessage))
             }
-            
+         
+            .blur(radius: isShowDetails ? 20:0)
             if(viewModel.isLoading){
                 ProgressView()
+            }
+            if(isShowDetails){
+                AppetizerDetailsView(appetizer: appetizer!, isShowDetails: $isShowDetails)
             }
         }
        
@@ -39,5 +51,5 @@ struct AppetizerListView: View {
 }
 
 #Preview {
-    AppetizerListView()
+    AppetizerListView(appetizer: MockData.sampleAppetizer)
 }
