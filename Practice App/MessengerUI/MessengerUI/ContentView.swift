@@ -12,15 +12,18 @@ struct ContentView: View {
         TabView{
             Chat()
                 .tabItem {
-                    Label("Chat", systemImage: "ellipsis.message.fill")
+                    Label("Chat", systemImage: "message.badge.waveform")
                 }
             People()
                 .tabItem {
-                    Label("People", systemImage: "person.2.fill")
+                    Label("People",
+                    systemImage: "person.2.fill")
                 }
+            
             Stories()
                 .tabItem {
-                    Label("Story", systemImage: "photo.stack.fill")
+                    Label("Stories",
+                    systemImage: "photo.stack")
                 }
         }
         

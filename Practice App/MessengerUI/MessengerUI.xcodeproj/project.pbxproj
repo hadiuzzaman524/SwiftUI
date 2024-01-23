@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F3E6CA62B5ED4AE0058B69A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CA52B5ED4AE0058B69A /* Chat.swift */; };
-		0F3E6CAA2B5ED4F70058B69A /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CA92B5ED4F70058B69A /* Stories.swift */; };
-		0F3E6CAC2B5ED6D60058B69A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CAB2B5ED6D60058B69A /* People.swift */; };
+		0F3E6CAE2B601BCF0058B69A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CAD2B601BCF0058B69A /* Chat.swift */; };
+		0F3E6CB02B601BEB0058B69A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CAF2B601BEB0058B69A /* People.swift */; };
+		0F3E6CB22B601C050058B69A /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E6CB12B601C050058B69A /* Stories.swift */; };
 		0FC6F8FD2B5EC2C500C78135 /* MessengerUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F8FC2B5EC2C500C78135 /* MessengerUIApp.swift */; };
 		0FC6F8FF2B5EC2C500C78135 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F8FE2B5EC2C500C78135 /* ContentView.swift */; };
 		0FC6F9012B5EC2C700C78135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC6F9002B5EC2C700C78135 /* Assets.xcassets */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F3E6CA52B5ED4AE0058B69A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		0F3E6CA92B5ED4F70058B69A /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
-		0F3E6CAB2B5ED6D60058B69A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		0F3E6CAD2B601BCF0058B69A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		0F3E6CAF2B601BEB0058B69A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		0F3E6CB12B601C050058B69A /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		0FC6F8F92B5EC2C400C78135 /* MessengerUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC6F8FC2B5EC2C500C78135 /* MessengerUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUIApp.swift; sourceTree = "<group>"; };
 		0FC6F8FE2B5EC2C500C78135 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3E6CB32B601C2F0058B69A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0F3E6CB12B601C050058B69A /* Stories.swift */,
+				0F3E6CAF2B601BEB0058B69A /* People.swift */,
+				0F3E6CAD2B601BCF0058B69A /* Chat.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		0FC6F8F02B5EC2C400C78135 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +67,7 @@
 		0FC6F8FB2B5EC2C400C78135 /* MessengerUI */ = {
 			isa = PBXGroup;
 			children = (
-				0F3E6CAB2B5ED6D60058B69A /* People.swift */,
-				0F3E6CA92B5ED4F70058B69A /* Stories.swift */,
-				0F3E6CA52B5ED4AE0058B69A /* Chat.swift */,
+				0F3E6CB32B601C2F0058B69A /* Screen */,
 				0FC6F8FC2B5EC2C500C78135 /* MessengerUIApp.swift */,
 				0FC6F8FE2B5EC2C500C78135 /* ContentView.swift */,
 				0FC6F9002B5EC2C700C78135 /* Assets.xcassets */,
@@ -146,11 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3E6CB02B601BEB0058B69A /* People.swift in Sources */,
 				0FC6F8FF2B5EC2C500C78135 /* ContentView.swift in Sources */,
-				0F3E6CA62B5ED4AE0058B69A /* Chat.swift in Sources */,
-				0F3E6CAA2B5ED4F70058B69A /* Stories.swift in Sources */,
+				0F3E6CAE2B601BCF0058B69A /* Chat.swift in Sources */,
+				0F3E6CB22B601C050058B69A /* Stories.swift in Sources */,
 				0FC6F8FD2B5EC2C500C78135 /* MessengerUIApp.swift in Sources */,
-				0F3E6CAC2B5ED6D60058B69A /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
