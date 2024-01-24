@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Chat: View {
     
+    @StateObject var viewModel = PersonViewModel()
+    
     @State private var searchText: String = ""
     
-    private var personList = [ " Jhon", "Jhon Doe", "Jhon Doe2", "Jhon Doe3", "Jhon Doe4", "Jhonn Doe5", "Jhonn Doe6"]
-    
+  
     var body: some View {
         NavigationView{
             ScrollView{
@@ -20,7 +21,7 @@ struct Chat: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         
                         HStack{
-                            ForEach(personList, id: \.self){
+                            ForEach(viewModel.personList, id: \.self){
                                 person in
                                 VStack{
                                     Image("hadi")
@@ -34,7 +35,7 @@ struct Chat: View {
                         
                     }
                     
-                    ForEach(personList, id: \.self){
+                    ForEach(viewModel.personList, id: \.self){
                         person in
                         
                         HStack(spacing:8){
