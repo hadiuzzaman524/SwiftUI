@@ -28,6 +28,8 @@ struct AppetizerListView: View {
                   
                     }.disabled(isShowDetails ? true : false)
                 .navigationTitle("🚀 Appetizers")
+           
+                   }
             
             }.onAppear{
                 viewModel.getAppetizers();
@@ -45,9 +47,6 @@ struct AppetizerListView: View {
                 AppetizerDetailsView(appetizer: appetizer!, isShowDetails: $isShowDetails)
             }
         }
-       
-       
-    }
 }
 
 #Preview {

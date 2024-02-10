@@ -17,23 +17,20 @@ struct AccountView: View {
     var body: some View {
         NavigationView{
             Form{
-                Section(header: Text("User Information")){
-                    
-                    TextField("First name", text: $viewModel
-                        .firstName)
-                    TextField("Last name", text: $viewModel.lastName)
-                    TextField("Email", text: $viewModel.email)
+                Section{
+                    TextField("First name", text: $viewModel.user.firstName)
+                    TextField("Last name", text: $viewModel.user.lastName)
+                    TextField("Email", text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("Birthday" ,selection: $viewModel.date, displayedComponents: .date)
+                    DatePicker("Birthday" ,selection: $viewModel.user.date, displayedComponents: .date)
                     Button{
                         viewModel.validate()
                         if(viewModel.isValidForm){
-                        
-                            isInvalid = false;
-                            print(viewModel.firstName)
-                            print(viewModel.lastName)
+                    
+                            isInvalid = false
+                            viewModel.saveChanges()
                         }else{
                             isInvalid = true
                         }
@@ -41,14 +38,21 @@ struct AccountView: View {
                        Text("Save Information")
                     }
                     
+                } header: {
+                   Text("User Information")
                 }
-                Section(header: Text("Additional info")){
-                    Toggle("Extra napkins", isOn: $viewModel.extraNapkin )
-                    Toggle("Frequent refill", isOn: $viewModel.frequentRefill )
+                Section{
+                    Toggle("Extra napkins", isOn: $viewModel.user.extraNapkin )
+                    Toggle("Frequent refill", isOn: $viewModel.user.frequentRefill )
+                }header: {
+                    Text("Additional info")
                 }
             }
             .navigationTitle("🚀 Account")
-        }.alert(isPresented: $isInvalid){
+        }.onAppear{
+            viewModel.retriveUser()
+        }
+        .alert(isPresented: $isInvalid){
             Alert(title: Text("Form can't be empty"))
 
         }

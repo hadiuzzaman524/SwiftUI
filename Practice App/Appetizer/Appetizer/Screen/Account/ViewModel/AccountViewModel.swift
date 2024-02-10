@@ -6,19 +6,39 @@
 //
 
 import Foundation
+import SwiftUI
 
 class AccountViewModel: ObservableObject{
     
-    @Published var firstName: String = ""
-    @Published var lastName: String = ""
-    @Published var email: String = ""
-    @Published var date: Date = Date.now
-    @Published var extraNapkin: Bool = false
-    @Published var frequentRefill: Bool = false
+    @Published var user = User()
+    
     @Published var isValidForm: Bool = false
     
+    @AppStorage("user") private var userData : Data?
+    
+    func saveChanges(){
+        guard isValidForm else{return}
+        
+        do{
+            let data = try JSONEncoder().encode(user)
+            userData = data
+        }catch{
+            print("Error on save user data")
+        }
+        print("Save Changes")
+    }
+    func retriveUser(){
+        guard let userData = userData else {return}
+        do{
+            let u = try JSONDecoder().decode(User.self, from: userData)
+            user = u
+        }catch{
+            print("Failed to fetch data")
+        }
+    }
+    
     func validate () -> Void {
-        if firstName.isEmpty || lastName.isEmpty || email.isEmpty {
+        if user.firstName.isEmpty || user.lastName.isEmpty || user.email.isEmpty {
             isValidForm = false
         }else{
             isValidForm = true

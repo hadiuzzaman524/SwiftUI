@@ -211,5 +211,53 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E361614-1AB5-4338-9497-FAD4E49891D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Appetizer/Screen/Account/AccountView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1E361614-1AB5-4338-9497-FAD4E49891D7 - 4b6622accb53a7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Appetizer.AccountView.body.getter : some"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Screen/Account/AccountView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "314">
+               </Location>
+               <Location
+                  uuid = "1E361614-1AB5-4338-9497-FAD4E49891D7 - eea24187da742db0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Appetizer.AccountView.body.getter : some"
+                  moduleName = "Appetizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hadi/Documents/SwiftUI/Apple-Framework/Practice%20App/Appetizer/Appetizer/Screen/Account/AccountView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "325">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
