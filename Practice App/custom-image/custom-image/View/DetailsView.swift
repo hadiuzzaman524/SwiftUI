@@ -8,22 +8,38 @@
 import SwiftUI
 
 struct DetailsView: View {
+    var landmark: Landmark
+    
     var body: some View {
         
-        HStack{
-            VStack(alignment:.leading){
-                Text("Md Hadiuzzaman")
-                    .font(.title)
-                    .foregroundColor(.red)
-                Text("05/03/1998")
+        VStack(alignment:.leading){
+            HStack{
+                VStack(alignment:.leading){
+                    Text(landmark.name)
+                        .font(.title)
+                        .foregroundColor(.red)
+                    Text(landmark.park)
+                }
+          
+                Spacer()
+                Text(landmark.state )
+                
+       
             }
+            Divider()
+            Text("About $\(landmark.name)")
+                .font(.title2)
+                .foregroundStyle(.gray)
+            
+            Text(landmark.description)
+            
+        
             Spacer()
-            Text("Dhaka,BD")
-   
         }.padding()
+     
     }
 }
 
 #Preview {
-    DetailsView()
+    DetailsView(landmark: landmarks[0])
 }

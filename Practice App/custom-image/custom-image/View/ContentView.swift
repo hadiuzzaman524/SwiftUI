@@ -6,22 +6,30 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
+    
+    var landmark: Landmark
+    
     var body: some View {
-        VStack{
-            MapView()
-                .frame(height: 300)
-           ImageView()
-                .offset(y:-130)
-                .padding(.bottom, -130)
-            DetailsView()
-            Spacer()
+        ScrollView{
+            VStack{
+                MapView(cordinate: landmark.locationCoordinate)
+                    .frame(height: 250)
+                ImageView(image: landmark.image)
+                    .offset(y:-130)
+                    .padding(.bottom, -130)
+                DetailsView(landmark: landmark)
+                Spacer()
+            }
+          
         }
-        
+        .navigationTitle(landmark.name)
+               .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(landmark: landmarks[0])
 }
