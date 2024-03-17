@@ -19,6 +19,7 @@
 		0F919DFF2B94D782009427F4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F919DFE2B94D782009427F4 /* ModelData.swift */; };
 		0F919E062B94DAF0009427F4 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F919E052B94DAF0009427F4 /* LandmarkRow.swift */; };
 		0F919E082B94DBFD009427F4 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F919E072B94DBFD009427F4 /* landmarkData.json */; };
+		0FA62EBA2BA6C00E004FAECC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA62EB92BA6C00E004FAECC /* FavoriteButton.swift */; };
 		0FEA49BF2B95672700570ACD /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA49BE2B95672700570ACD /* LandmarkList.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0F919DFE2B94D782009427F4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		0F919E052B94DAF0009427F4 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		0F919E072B94DBFD009427F4 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../../../../Downloads/BuildingListsAndNavigation/Resources/landmarkData.json; sourceTree = "<group>"; };
+		0FA62EB92BA6C00E004FAECC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		0FEA49BE2B95672700570ACD /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				0F919DF62B94AA87009427F4 /* ImageView.swift */,
 				0F919E052B94DAF0009427F4 /* LandmarkRow.swift */,
 				0FEA49BE2B95672700570ACD /* LandmarkList.swift */,
+				0FA62EB92BA6C00E004FAECC /* FavoriteButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				0F919DF72B94AA87009427F4 /* ImageView.swift in Sources */,
 				0F919DFB2B94AFF5009427F4 /* DetailsView.swift in Sources */,
 				0F919DF92B94AE2C009427F4 /* MapView.swift in Sources */,
+				0FA62EBA2BA6C00E004FAECC /* FavoriteButton.swift in Sources */,
 				0F919DEB2B94A850009427F4 /* ContentView.swift in Sources */,
 				0FEA49BF2B95672700570ACD /* LandmarkList.swift in Sources */,
 				0F919DE92B94A850009427F4 /* custom_imageApp.swift in Sources */,

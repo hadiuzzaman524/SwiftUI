@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct custom_imageApp: App {
+    
+    @State private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            LandmarkList()
+            LandmarkList().environment(modelData)
         }
     }
 }

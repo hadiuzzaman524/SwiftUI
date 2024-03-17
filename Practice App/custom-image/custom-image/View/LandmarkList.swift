@@ -9,10 +9,11 @@ import SwiftUI
 
 struct LandmarkList: View {
     
+    @Environment(ModelData.self) var modelData
     @State private var onlyShowFavorited: Bool = false
     
     private var filteredLandmarks: [Landmark]  {
-        landmarks.filter { landmark in
+        modelData.landmarks.filter { landmark in
                    (!onlyShowFavorited || landmark.isFavorite)
                }
     }

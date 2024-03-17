@@ -31,5 +31,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(landmark: landmarks[0])
+    let landmarks = ModelData().landmarks
+    
+   return ContentView(landmark: landmarks[0])
 }

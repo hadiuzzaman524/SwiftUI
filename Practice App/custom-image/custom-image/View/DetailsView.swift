@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct DetailsView: View {
+   
     var landmark: Landmark
+    
+    @Environment(ModelData.self) var modelData
+    
+    var landmarkIndex: Int {
+            modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+        }
     
     var body: some View {
         
+        @Bindable var modelData = modelData
+
         VStack(alignment:.leading){
             HStack{
                 VStack(alignment:.leading){
-                    Text(landmark.name)
-                        .font(.title)
-                        .foregroundColor(.red)
+                    
+                    HStack{
+                        Text(landmark.name)
+                            .font(.title)
+                            .foregroundColor(.red)
+                        FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                    }
+                
                     Text(landmark.park)
                 }
           
@@ -41,5 +55,7 @@ struct DetailsView: View {
 }
 
 #Preview {
-    DetailsView(landmark: landmarks[0])
+    let landmarks = ModelData().landmarks
+    
+    return DetailsView(landmark: landmarks[0])
 }
